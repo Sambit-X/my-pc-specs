@@ -253,6 +253,7 @@
 <footer class="footer">
     <p>Copyright &copy; 2026 Sambit Kumar Mondal</p>
     <p class="footer-tags">#keeplearning &nbsp;·&nbsp; #keepeating</p>
+    <p class="footer-views"><span class="view-counter">1</span> visits</p>
 </footer>
 
 <script>
@@ -273,6 +274,20 @@
     window.addEventListener('scroll', () => {
         nav.classList.toggle('nav--scrolled', window.scrollY > 60);
     });
+
+    // Visit counter
+    const counterElement = document.querySelector('.view-counter');
+    let visitCount = localStorage.getItem('visitCount');
+    
+    if (visitCount === null) {
+        visitCount = 1;
+    } else {
+        visitCount = parseInt(visitCount) + 1;
+    }
+    
+    localStorage.setItem('visitCount', visitCount);
+    counterElement.textContent = visitCount;
+    counterElement.classList.add('counter-pulse');
 </script>
 </body>
 </html>

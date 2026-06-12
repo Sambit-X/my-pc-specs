@@ -490,6 +490,34 @@ img {
     opacity: 0.7;
 }
 
+.footer-views {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+}
+
+.view-counter {
+    color: var(--accent);
+    font-weight: 600;
+    font-family: var(--font-display);
+    animation: counterPulse 0.6s var(--transition);
+}
+
+@keyframes counterPulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /* ─────────────────────────────────────────────
    ANIMATIONS
 ───────────────────────────────────────────── */
