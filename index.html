@@ -4,166 +4,275 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Pc Specs Site</title>
+    <title>SamM — PC Build</title>
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="media/SamM.png" class="logo">
-            <ul>
-                <li><a href="#about">My PC Specifications</a></li>          
+<body>
+
+<!-- ─── HERO ─── -->
+<header id="header">
+    <nav class="nav">
+        <img src="media/SamM.png" class="logo" alt="SamM logo">
+        <ul class="nav-links">
+            <li><a href="#specs">PC Specs</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content">
+        <p class="hero-eyebrow">Build Log · 2026</p>
+        <h1 class="hero-heading">
+            I Am Stuck On Computer,<br>
+            <span class="accent">'Cause Computer's<br class="mobile-br"> Stuck On Me.</span>
+        </h1>
+        <a href="#specs" class="hero-cta">View the Build</a>
+    </div>
+
+    <div class="hero-scroll-hint">
+        <span></span>
+    </div>
+</header>
+
+<!-- ─── SPECS ─── -->
+<main id="specs">
+    <div class="specs-header">
+        <p class="section-eyebrow">Hardware Overview</p>
+        <h2 class="section-title">A Glimpse at My PC Specs</h2>
+    </div>
+
+    <!-- GPU New -->
+    <article class="spec-card reveal" data-category="GPU · Current">
+        <div class="spec-img-wrap">
+            <img src="media/RadeonRX9070.jpg" alt="ASRock Radeon RX 9070">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Graphics Card</span>
+            <h3 class="spec-name">ASRock Challenger<br>Radeon RX 9070</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">GPU Type</span><span class="spec-val">AMD Radeon</span></li>
+                <li><span class="spec-key">VRAM</span><span class="spec-val">16 GB</span></li>
+                <li><span class="spec-key">Brand</span><span class="spec-val">ASRock</span></li>
+                <li><span class="spec-key">Model</span><span class="spec-val">Challenger</span></li>
             </ul>
-        </nav>
-        <div class="header-text">    
-            <h1>I Am Stuck On Computer, <br><span>'Cause Computer's Stuck On Me.</span></h1>
         </div>
-    </div>
-</div>
+    </article>
 
-<div id="about">
-    <h1 class="main-title">A Glimpse at my PC Specs</h1>
-    <div class="container">
-        <div class="row">
-             <div class="about-col-1">
-                <img src="media/RadeonRX9070.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">ASRock Challenger Radeon RX 9070</h1>
-                <p>GPU Type - AMD Radeon<br>VRAM - 16 GB<br>Brand - ASRock<br>Model - Challenger</p>
-            </div>
-           
+    <!-- GPU Old -->
+    <article class="spec-card spec-card--reversed reveal" data-category="GPU · Previous">
+        <div class="spec-img-wrap">
+            <img src="media/RadeonRX580.jpg" alt="Radeon RX 580">
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            
-            <div class="about-col-2">
-                <h1 class="sub-title">Radeon RX 580 (Old)</h1>
-                <p>Graphics Coprocessor	AMD - Radeon RX 580 <br> Brand - Sapphire <br> Graphics RAM Size - 8 GB <br> GPU Clock Speed - 1366 MHz <br> Video Output Interface - DisplayPort, DVI, HDMI</p>
-            </div>
-            <div class="about-col-1">
-                <img src="media/RadeonRX580.jpg">
-            </div>
+        <div class="spec-info">
+            <span class="spec-badge spec-badge--muted">Graphics Card (Old)</span>
+            <h3 class="spec-name">Sapphire Radeon<br>RX 580</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">GPU</span><span class="spec-val">AMD Radeon RX 580</span></li>
+                <li><span class="spec-key">Brand</span><span class="spec-val">Sapphire</span></li>
+                <li><span class="spec-key">VRAM</span><span class="spec-val">8 GB</span></li>
+                <li><span class="spec-key">Clock Speed</span><span class="spec-val">1366 MHz</span></li>
+                <li><span class="spec-key">Output</span><span class="spec-val">DP · DVI · HDMI</span></li>
+            </ul>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="media/i5.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz</h1>
-                <p>Brand - Intel <br>CPU Manufacturer - Intel <br>CPU Model	Core - i5 <br>CPU Speed - 2.9 GHz <br> CPU Socket - LGA 1151</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-2">
-                <h1 class="sub-title">ASUS Prime B365M-C/CSM Motherboard</h1>
-                <p>Intel B365<br>Data Rate - DDR4<br>Maximum RAM Capacity - 64 GB<br>Form Factor - Micro-ATX</p>
-            </div>
-            <div class="about-col-1">
-                <img src="media/motherboard.jpg">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="media/ram.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Corsair Vengeance LPX 8GB DDR4 3000</h1>
-                <p>Brand- Corsair <br> Computer Memory Size - 8 <br>GBRAM Memory Technology - DDR4 <br> Memory Speed - 2133 MHz</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-2">
-                <h1 class="sub-title">Samsung 860 Evo 250 GB</h1>
-                <p>Storage Type - SATA SSD<br>Capacity - 250 GB<br>Form Factor - M.2-2280<br>Brand - Samsung</p>
-            </div>
-            <div class="about-col-1">
-                <img src="media/samsung_ssd.jpg">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="media/wdblue_ssd.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Western Digital Blue SN570 1 TB</h1>
-                <p>Storage Type - NVMe SSD<br>Capacity - 1 TB<br>Form Factor - M.2-2280<br>Interface - PCIe 3.0 x4</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-2">
-                <h1 class="sub-title">Thermaltake TR2 S 600W Power Supply</h1>
-                <p>Power Output - 600W<br>Efficiency - 80+ ATX<br>Brand - Thermaltake<br>Model - TR2 S</p>
-            </div>
-            <div class="about-col-1">
-                <img src="media/psu.jpg">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="media/cabinet.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Thermaltake V200 RGB Case</h1>
-                <p>Case Type - ATX Mid Tower<br>Brand - Thermaltake<br>Features - RGB Lighting<br>Model - V200 RGB</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-2">
-                <h1 class="sub-title">FRONTECH Wired Keyboard KB-0033</h1>
-                <p>Type - Membrane<br>Connectivity - USB Wired<br>Features - Retractable Stands<br>Warranty - 1 Year<br>Tier - Budget</p>
-            </div>
-            <div class="about-col-1">
-                <img src="media/keyboard.jpg">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="media/mouse.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Logitech G402 Hyperion Fury</h1>
-                <p>Type - Gaming Mouse<br>DPI - 4000<br>Buttons - 8<br>Connectivity - USB Wired<br>Features - Lightweight Design, Programmable Buttons, PC and Mac Compatible<br>Tier - Mid Range Gaming</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-2">
-                <h1 class="sub-title">EUREKA ERGONOMIC Z60 Gaming Desk</h1>
-                <p>Size - 60 Inch<br>Frame - Metal Z Shape<br>Features - RGB LED Lighting, Controller Stand, Large Mouse Pad, Gaming Focused Design<br>Tier - Premium<br>Era - Modern</p>
-            </div>
-            <div class="about-col-1">
-                <img src="media/desk.jpg">
-            </div>
-        </div>
-    </div>
-    
-</div>
-<div class="copyright">
-    <p>Copyright © 2026 Sambit Kumar Mondal #keeplearning #keepeating</p>
-</div>
+    </article>
 
+    <!-- CPU -->
+    <article class="spec-card reveal" data-category="CPU">
+        <div class="spec-img-wrap">
+            <img src="media/i5.jpg" alt="Intel Core i5-9400F">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Processor</span>
+            <h3 class="spec-name">Intel Core<br>i5-9400F</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Brand</span><span class="spec-val">Intel</span></li>
+                <li><span class="spec-key">Model</span><span class="spec-val">Core i5</span></li>
+                <li><span class="spec-key">Clock Speed</span><span class="spec-val">2.9 GHz</span></li>
+                <li><span class="spec-key">Socket</span><span class="spec-val">LGA 1151</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- Motherboard -->
+    <article class="spec-card spec-card--reversed reveal" data-category="Motherboard">
+        <div class="spec-img-wrap">
+            <img src="media/motherboard.jpg" alt="ASUS Prime B365M-C">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Motherboard</span>
+            <h3 class="spec-name">ASUS Prime<br>B365M-C/CSM</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Chipset</span><span class="spec-val">Intel B365</span></li>
+                <li><span class="spec-key">Memory Type</span><span class="spec-val">DDR4</span></li>
+                <li><span class="spec-key">Max RAM</span><span class="spec-val">64 GB</span></li>
+                <li><span class="spec-key">Form Factor</span><span class="spec-val">Micro-ATX</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- RAM -->
+    <article class="spec-card reveal" data-category="Memory">
+        <div class="spec-img-wrap">
+            <img src="media/ram.jpg" alt="Corsair Vengeance LPX 8GB">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Memory</span>
+            <h3 class="spec-name">Corsair Vengeance<br>LPX 8 GB DDR4</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Brand</span><span class="spec-val">Corsair</span></li>
+                <li><span class="spec-key">Capacity</span><span class="spec-val">8 GB</span></li>
+                <li><span class="spec-key">Type</span><span class="spec-val">DDR4</span></li>
+                <li><span class="spec-key">Speed</span><span class="spec-val">3000 MHz (XMP)</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- SSD Samsung -->
+    <article class="spec-card spec-card--reversed reveal" data-category="Storage · OS">
+        <div class="spec-img-wrap">
+            <img src="media/samsung_ssd.jpg" alt="Samsung 860 EVO 250GB">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Storage</span>
+            <h3 class="spec-name">Samsung 860 EVO<br>250 GB</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Type</span><span class="spec-val">SATA SSD</span></li>
+                <li><span class="spec-key">Capacity</span><span class="spec-val">250 GB</span></li>
+                <li><span class="spec-key">Form Factor</span><span class="spec-val">M.2-2280</span></li>
+                <li><span class="spec-key">Brand</span><span class="spec-val">Samsung</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- NVMe -->
+    <article class="spec-card reveal" data-category="Storage · Main">
+        <div class="spec-img-wrap">
+            <img src="media/wdblue_ssd.jpg" alt="WD Blue SN570 1TB">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">NVMe SSD</span>
+            <h3 class="spec-name">WD Blue SN570<br>1 TB</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Type</span><span class="spec-val">NVMe SSD</span></li>
+                <li><span class="spec-key">Capacity</span><span class="spec-val">1 TB</span></li>
+                <li><span class="spec-key">Form Factor</span><span class="spec-val">M.2-2280</span></li>
+                <li><span class="spec-key">Interface</span><span class="spec-val">PCIe 3.0 x4</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- PSU -->
+    <article class="spec-card spec-card--reversed reveal" data-category="Power Supply">
+        <div class="spec-img-wrap">
+            <img src="media/psu.jpg" alt="Thermaltake TR2 S 600W">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Power Supply</span>
+            <h3 class="spec-name">Thermaltake TR2 S<br>600 W</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Output</span><span class="spec-val">600 W</span></li>
+                <li><span class="spec-key">Efficiency</span><span class="spec-val">80+ Bronze</span></li>
+                <li><span class="spec-key">Brand</span><span class="spec-val">Thermaltake</span></li>
+                <li><span class="spec-key">Model</span><span class="spec-val">TR2 S</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- Case -->
+    <article class="spec-card reveal" data-category="Case">
+        <div class="spec-img-wrap">
+            <img src="media/cabinet.jpg" alt="Thermaltake V200 RGB">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Case</span>
+            <h3 class="spec-name">Thermaltake<br>V200 RGB</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Type</span><span class="spec-val">ATX Mid Tower</span></li>
+                <li><span class="spec-key">Brand</span><span class="spec-val">Thermaltake</span></li>
+                <li><span class="spec-key">Features</span><span class="spec-val">RGB Lighting</span></li>
+                <li><span class="spec-key">Model</span><span class="spec-val">V200 RGB</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- Keyboard -->
+    <article class="spec-card spec-card--reversed reveal" data-category="Peripherals">
+        <div class="spec-img-wrap">
+            <img src="media/keyboard.jpg" alt="FRONTECH Keyboard KB-0033">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Keyboard</span>
+            <h3 class="spec-name">FRONTECH Wired<br>KB-0033</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Type</span><span class="spec-val">Membrane</span></li>
+                <li><span class="spec-key">Connectivity</span><span class="spec-val">USB Wired</span></li>
+                <li><span class="spec-key">Features</span><span class="spec-val">Retractable Stands</span></li>
+                <li><span class="spec-key">Tier</span><span class="spec-val">Budget</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- Mouse -->
+    <article class="spec-card reveal" data-category="Peripherals">
+        <div class="spec-img-wrap">
+            <img src="media/mouse.jpg" alt="Logitech G402">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Gaming Mouse</span>
+            <h3 class="spec-name">Logitech G402<br>Hyperion Fury</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">DPI</span><span class="spec-val">Up to 4000</span></li>
+                <li><span class="spec-key">Buttons</span><span class="spec-val">8 Programmable</span></li>
+                <li><span class="spec-key">Connectivity</span><span class="spec-val">USB Wired</span></li>
+                <li><span class="spec-key">Tier</span><span class="spec-val">Mid-Range Gaming</span></li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- Desk -->
+    <article class="spec-card spec-card--reversed reveal" data-category="Workspace">
+        <div class="spec-img-wrap">
+            <img src="media/desk.jpg" alt="EUREKA ERGONOMIC Z60 Desk">
+        </div>
+        <div class="spec-info">
+            <span class="spec-badge">Gaming Desk</span>
+            <h3 class="spec-name">EUREKA Ergonomic<br>Z60</h3>
+            <ul class="spec-list">
+                <li><span class="spec-key">Size</span><span class="spec-val">60 Inch</span></li>
+                <li><span class="spec-key">Frame</span><span class="spec-val">Metal Z-Shape</span></li>
+                <li><span class="spec-key">Features</span><span class="spec-val">RGB · Mouse Pad · Stand</span></li>
+                <li><span class="spec-key">Tier</span><span class="spec-val">Premium</span></li>
+            </ul>
+        </div>
+    </article>
+
+</main>
+
+<footer class="footer">
+    <p>Copyright &copy; 2026 Sambit Kumar Mondal</p>
+    <p class="footer-tags">#keeplearning &nbsp;·&nbsp; #keepeating</p>
+</footer>
+
+<script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Nav background on scroll
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+    });
+</script>
 </body>
 </html>
